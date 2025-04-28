@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Wireless Bluetooth Headphones",
+    "price": 189.99,
+    "description": "Premium noise-cancelling headphones with 30-hour battery life",
+    "category": "electronics",
+    "image_url": "/static/images/headphones.jpg",
+    "stock": 50
+  },
+  {
+    "name": "Nature Graphic T-Shirt",
+    "price": 24.99,
+    "description": "Comfortable unisex t-shirt made from 100% organic cotton",
+    "category": "clothing",
+    "image_url": "/static/images/tshirt.jpg",
+    "stock": 120
+  },
+  {
+    "name": "Stainless Steel Water Bottle",
+    "price": 19.95,
+    "description": "Insulated 32oz bottle that keeps drinks cold for 24 hours",
+    "category": "home",
+    "image_url": "/static/images/bottle.jpg",
+    "stock": 85
+  },
+  {
+    "name": "Smart Fitness Watch",
+    "price": 129.99,
+    "description": "Track heart rate, steps, and sleep patterns with this smart watch!",
+    "category": "electronics",
+    "image_url": "/static/images/watch.jpg",
+    "stock": 30
+  },
+  {
+    "name": "Yoga Mat",
+    "price": 29.99,
+    "description": "Eco-friendly non-slip yoga mat",
+    "category": "home",
+    "image_url": "/static/images/yogamat.jpg",
+    "stock": 3
+  },
+  {
+    "name": "Ceramic Coffee Mug Set",
+    "price": 22.50,
+    "description": "Set of handcrafted ceramic mugs with modern design",
+    "category": "home",
+    "image_url": "/static/images/mugs.jpg",
+    "stock": 40
+  },
+  {
+    "name": "Fluffy Blanket",
+    "price": 50.50,
+    "description": "Large white fluffy blanket ",
+    "category": "home",
+    "image_url": "/static/images/blanket.jpg",
+    "stock": 10
+  },
+  {
+    "name": "Textured Abstract Rug",
+    "price": 32.50,
+    "description": "A soft blue rug with a unique design",
+    "category": "home",
+    "image_url": "/static/images/rug.jpg",
+    "stock": 20
+  },
+  {
+    "name": "Mac Monitor",
+    "price": 1599.50,
+    "description": "Immersive 27-inch 5K Retina display",
+    "category": "electronics",
+    "image_url": "/static/images/monitor.jpg",
+    "stock": 1
+  },
+  {
+    "name": "Bluetooth Speaker",
+    "price": 89.99,
+    "description": "Surprising sound for its size",
+    "category": "electronics",
+    "image_url": "/static/images/speaker.jpg",
+    "stock": 3
+  },
+  {
+    "name": "Apple TV 4K",
+    "price": 129.99,
+    "description": "Apple tv set. Includes Apple TV+, Apple Music, Apple Arcade, Apple Fitness, and more!",
+    "category": "electronics",
+    "image_url": "/static/images/appletv.jpg",
+    "stock": 1
+  },
+  {
+    "name": "Extreme Baggy Washed Jeans (from boohooMAN)",
+    "price": 22.50,
+    "description": "Loose fit boohoo jeans in medium sizing.",
+    "category": "clothing",
+    "image_url": "/static/images/boohoo.jpg",
+    "stock": 2
+  },
+  {
+    "name": "Sunglasses",
+    "price": 10.50,
+    "description": "Blue lense shades",
+    "category": "clothing",
+    "image_url": "/static/images/shades.jpg",
+    "stock": 1
+  },
+  {
+    "name": "Nike Air Max 97",
+    "price": 85.50,
+    "description": "Air Max 97s, size 12",
+    "category": "clothing",
+    "image_url": "/static/images/shoes.jpg",
+    "stock": 40
+  },
+  {
+    "name": "Zip-up Hoodie Sweatshirt",
+    "price": 48.50,
+    "description": "Solid beige, fluffy. Relaxed fit for daily wear.",
+    "category": "clothing",
+    "image_url": "/static/images/hoodie.jpg",
+    "stock": 2
+  }
+]

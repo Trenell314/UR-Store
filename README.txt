@@ -1,0 +1,5 @@
+Trenell Holmes
+CSC 210
+Project 2
+
+This is a fake shoping website for students selling items at the University of Rochester. This was made using html, css, javascript, and sql. There are two sql tables, one for users and one for shopping items. JSON parsing is used to generate the initial items. However, once you create a user you can add and delete your own items (login page is replace by the adding page). There is also an admin account (details located in app.py) that allows you to delete any item you want. Using the filter at the top of the products page allows you to sort through the items by category.

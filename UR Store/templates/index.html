@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+<img class="header" src="static/header.jpg" width="800" height="400">
+</div>
+<div class="welcome-container">
+    <h1>Welcome to <span class="c1">U</span><span class="c2">R</span> Store!</h1>
+    <p class="welcome-message">
+        Buy and sell products from the University of Rochester community! 
+        {% if not current_user.is_authenticated %}
+            <a href="{{ url_for('register') }}">Create an account</a> or 
+            <a href="{{ url_for('login') }}">login</a> to start shopping!
+        {% else %}
+            Welcome back, {{ current_user.username }}! Check out our 
+            <a href="{{ url_for('products') }}">products</a>.
+        {% endif %}
+    </p>
+    
+    <div class="features">
+        <div class="feature">
+            <h3>Easy Shopping</h3>
+            <p>Browse thousands of products with just a few clicks</p>
+        </div>
+        <div class="feature">
+            <h3>Fast Delivery</h3>
+            <p>Get your orders delivered within 2-3 business days</p>
+        </div>
+        <div class="feature">
+            <h3>Quality Guarantee</h3>
+            <p>30-day money back guarantee on all products</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

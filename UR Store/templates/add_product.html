@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="product-form-container">
+    <div class="product-form-card">
+        <h1 class="form-title">Add New Product</h1>
+        
+        <form method="POST" enctype="multipart/form-data" class="product-form">
+            {{ form.hidden_tag() }}
+            
+            <div class="form-row">
+                <div class="form-group">
+                    {{ form.name.label(class="form-label") }}
+                    {{ form.name(class="form-input", placeholder="Enter product name") }}
+                    {% for error in form.name.errors %}
+                        <span class="error-message">{{ error }}</span>
+                    {% endfor %}
+                </div>
+                
+                <div class="form-group">
+                    {{ form.price.label(class="form-label") }}
+                    <div class="input-group">
+                        <span class="input-group-text">$</span>
+                        {{ form.price(class="form-input", placeholder="0.00") }}
+                    </div>
+                    {% for error in form.price.errors %}
+                        <span class="error-message">{{ error }}</span>
+                    {% endfor %}
+                </div>
+            </div>
+            
+            <div class="form-group">
+                {{ form.description.label(class="form-label") }}
+                {{ form.description(class="form-textarea", placeholder="Enter product description", rows=5) }}
+                {% for error in form.description.errors %}
+                    <span class="error-message">{{ error }}</span>
+                {% endfor %}
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    {{ form.category.label(class="form-label") }}
+                    {{ form.category(class="form-select") }}
+                    {% for error in form.category.errors %}
+                        <span class="error-message">{{ error }}</span>
+                    {% endfor %}
+                </div>
+                
+                <div class="form-group">
+                    {{ form.stock.label(class="form-label") }}
+                    {{ form.stock(class="form-input", placeholder="Available quantity") }}
+                    {% for error in form.stock.errors %}
+                        <span class="error-message">{{ error }}</span>
+                    {% endfor %}
+                </div>
+            </div>
+            
+            <div class="form-group file-upload-group">
+                {{ form.image.label(class="form-label") }}
+                <div class="file-upload-wrapper">
+                    {{ form.image(class="form-file-input") }}
+                    <label for="image" class="file-upload-label">
+                        <i class="upload-icon"></i>
+                    </label>
+                    {% if form.image.errors %}
+                        <div class="error-messages">
+                            {% for error in form.image.errors %}
+                                <span class="error-message">{{ error }}</span><br>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                    <small class="file-upload-hint">Allowed formats: JPG, PNG, JPEG (Max 5MB)</small>
+                </div>
+            </div>
+            
+            <div class="form-actions">
+                {{ form.submit(class="submit-btn") }}
+                <a href="{{ url_for('products') }}" class="cancel-btn">Cancel</a>
+            </div>
+            
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    {% for category, message in messages %}
+                        <div class="alert alert-{{ category }}">
+                            {{ message }}
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+        </form>
+    </div>
+</div>
+{% endblock %}
